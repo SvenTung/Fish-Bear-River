@@ -34,12 +34,12 @@ class BearTest < MiniTest::Test
   end
 
   def test_bear_roar
-    @bear.roar(@fishes)
+    @bear.roar(@amazon)
     assert_equal(0, @amazon.count_fish)
   end
 
   def test_remove_a_fish
-    @bear.remove_a_fish(@fishes)
+    @bear.remove_a_fish(@amazon)
     assert_equal(1, @bear.food_count)
     assert_equal(5, @amazon.count_fish)
   end

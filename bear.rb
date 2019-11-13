@@ -15,12 +15,12 @@ class Bear
     @stomach.push(fish)
   end
 
-  def roar(fishes)
-    fishes.clear
+  def roar(amazon)
+    amazon.clear
   end
 
-  def remove_a_fish(fishes)
-    fish = fishes.delete(fishes.sample)
+  def remove_a_fish(amazon)
+    fish = amazon.remove_random_fish
     @stomach.push(fish)
   end
 end

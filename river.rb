@@ -27,4 +27,8 @@ class River
     @fishes.delete(@fishes.sample)
   end
 
+  def clear
+    @fishes.clear
+  end
+
 end
