@@ -1,6 +1,6 @@
 require "pp"
 class River
-  attr_reader :name, :fishes
+  attr_reader :name
 
   def initialize(name, fishes)
     @name = name

@@ -5,7 +5,7 @@ require_relative('../fish')
 class RiverTest < MiniTest::Test
 
   def setup
-    @fish1 = Fish.new ("Sam the Salmon")
+    @fish1 = Fish.new("Sam the Salmon")
   end
 
   def test_check_name
