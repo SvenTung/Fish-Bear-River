@@ -38,6 +38,13 @@ class RiverTest < MiniTest::Test
     assert_equal(5, @amazon.count_fish)
   end
 
+  def test_remove_random_fish
+    @amazon.remove_random_fish
+    assert_equal(5, @amazon.count_fish)
+    @amazon.remove_random_fish
+    assert_equal(4, @amazon.count_fish)
+  end
+
   def test_eat_fish
     @bear = Bear.new("Bobby", "Brown")
     @amazon.fish_eaten("Poppy the Pike", @bear)
