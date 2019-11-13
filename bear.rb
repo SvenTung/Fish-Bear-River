@@ -15,4 +15,12 @@ class Bear
     @stomach.push(fish)
   end
 
+  def roar(fishes)
+    fishes.clear
+  end
+
+  def remove_a_fish(fishes)
+    fish = fishes.delete(fishes.sample)
+    @stomach.push(fish)
+  end
 end

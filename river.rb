@@ -27,13 +27,4 @@ class River
     @fishes.delete(@fishes.sample)
   end
 
-  def roar
-    @fishes.clear
-  end
-
-  def fish_eaten(name, bear)
-    remove_fish(name)
-    fish = find_fish(name)
-    bear.eat_fish(fish)
-  end
 end
