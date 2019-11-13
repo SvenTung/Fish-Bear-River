@@ -8,10 +8,6 @@ class RiverTest < MiniTest::Test
 
   def setup
     @fish1 = Fish.new("Sam the Salmon")
-  end
-
-  def setup
-    @fish1 = Fish.new("Sam the Salmon")
     @fish2 = Fish.new("Timmy the Trout")
     @fish3 = Fish.new("Poppy the Pike")
     @fish4 = Fish.new("Steve the Seabass")
