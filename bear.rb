@@ -1,6 +1,6 @@
 require "pp"
 class Bear
-  attr_reader :name
+  attr_reader :name, :type
   def initialize(name, type)
       @name = name
       @type = type

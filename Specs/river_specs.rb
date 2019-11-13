@@ -23,7 +23,6 @@ class RiverTest < MiniTest::Test
     @amazon = River.new("Amazon", @fishes)
   end
 
-
   def test_check_name
     assert_equal("Amazon", @amazon.name)
   end
